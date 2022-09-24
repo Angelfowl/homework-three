@@ -1,0 +1,39 @@
+nav {
+    width: 980px;
+    height: 94px;
+    // background-color: darkmagenta;
+    margin: 0 auto;
+    border-bottom: 2px solid #fff;
+    position: fixed;
+    float: clear;
+    left: 50%;
+    margin-left: -475px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        width: 10%;
+        height: 42px;
+        // background-color: blueviolet;
+    }
+
+    .links {
+        width: 60%;
+        height: 40px;
+        // background-color: hotpink;
+        color: #79ADDC;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        a {
+            font-family: GillSans;
+            font-size: 15px;
+            color: #fff;
+            text-decoration: none;
+
+        }
+
+    }
+}

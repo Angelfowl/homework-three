@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p {
+  margin-bottom: 16px;
+}
+
+@font-face {
+  font-family: GillSans;
+  src: url(../css/fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: ProximaThin;
+  src: url(../css/fonts/Proxima-Nova-Thin.otf);
+}
+nav {
+  width: 980px;
+  height: 94px;
+  margin: 0 auto;
+  border-bottom: 2px solid #fff;
+  position: fixed;
+  float: clear;
+  left: 50%;
+  margin-left: -475px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav .logo {
+  width: 10%;
+  height: 42px;
+}
+nav .links {
+  width: 60%;
+  height: 40px;
+  color: #79ADDC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+nav .links a {
+  font-family: GillSans;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  max-width: 1280px;
+  height: 500px;
+  background-image: url(../images/hero2.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+.hero .callout {
+  max-width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .callout .callout-title {
+  max-width: 500px;
+  min-height: 300px;
+  padding-top: 180px;
+  padding-left: 125px;
+}
+.hero .callout .callout-title h2 {
+  font-family: ProximaThin;
+  font-size: 60px;
+  color: #fff;
+}
+.hero .callout .callout-paragraph {
+  max-width: 450px;
+  min-height: 70px;
+}
+.hero .callout .callout-paragraph p {
+  font-family: GillSans;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  margin-top: -30px;
+  padding-left: 30px;
+}
+.hero .callout .callout-button {
+  width: 122px;
+  height: 40px;
+  background-color: #79ADDC;
+  margin-top: 43px;
+  margin-left: 180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hero .callout .callout-button h3 {
+  font-family: GillSans;
+  font-size: 15px;
+  color: #fff;
+  font-weight: lighter;
+  padding-top: 15px;
+}
+
+.tours {
+  max-width: 1280px;
+  height: 300px;
+  margin: 0 auto;
+}
+.tours .tour-container {
+  min-height: 304px;
+  max-width: 100%;
+  margin-top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.tours .tour-container .tour-imgs {
+  width: 236px;
+  height: 304px;
+  margin-right: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.tours .tour-container .tour-imgs img {
+  width: 236px;
+  height: 304px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  position: absolute;
+}
+.tours .tour-container .tour-imgs .tour-title {
+  width: 236px;
+  height: 304px;
+  position: absolute;
+  margin: 0 auto;
+}
+.tours .tour-container .tour-imgs .tour-title h2 {
+  font-family: ProximaNova;
+  font-size: 60px;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+}
+.tours .tour-container .tour-imgs .tour-title h3 {
+  font-family: ProximaNova;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+.tours .tour-container .tour-imgs .tour-button {
+  width: 133px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  position: absolute;
+  margin-top: 225px;
+  margin-left: 50px;
+}
+.tours .tour-container .tour-imgs .tour-button h2 {
+  font-family: GillSans;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 10px;
+}
+
+.booking-form {
+  width: 818px;
+  min-height: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.booking-form h2 {
+  font-family: ProximaNova;
+  font-size: 60px;
+  font-weight: lighter;
+  color: #000;
+}
+.booking-form .top-form {
+  max-width: 818px;
+  min-height: 100px;
+  text-align: center;
+}
+.booking-form .top-form input {
+  font-family: GillSans;
+  font-size: 18px;
+  width: 344px;
+  height: 60px;
+  border: 1px solid #79ADDC;
+  margin: 10px;
+  padding-left: 20px;
+}
+.booking-form .long-input {
+  width: 818px;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: -20px;
+}
+.booking-form .long-input label {
+  font-family: GillSans;
+  font-size: 18px;
+  color: #000;
+  margin-left: 55px;
+}
+.booking-form .long-input input {
+  font-family: GillSans;
+  font-size: 18px;
+  width: 600px;
+  height: 60px;
+  border: 1px solid #79ADDC;
+  margin-bottom: 10px;
+  margin-right: 50px;
+  padding-left: 20px;
+}
+.booking-form .list-buttons {
+  width: 100%;
+  height: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.booking-form .list-buttons label {
+  font-family: GillSans;
+  font-size: 18px;
+  color: #000;
+}
+.booking-form .list-buttons select {
+  width: 103px;
+  height: 58px;
+  font-family: GillSans;
+  border: 1px solid #79ADDC;
+  font-size: 18px;
+  padding-left: 15px;
+}
+.booking-form .message-box {
+  width: 820px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.booking-form .message-box input {
+  width: 725px;
+  height: 200px;
+  padding-bottom: 170px;
+  padding-left: 20px;
+}
+.booking-form .submitBtn {
+  width: 730px;
+  height: 60px;
+  background-color: #79ADDC;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  margin-left: 50px;
+}
+.booking-form .submitBtn h2 {
+  font-family: GillSans;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer {
+  max-width: 1280px;
+  min-height: 100px;
+  background-color: #79ADDC;
+  margin: 0 auto;
+}
+footer .footer-contain {
+  max-width: 980px;
+  height: 100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .logo-bot {
+  width: 96px;
+  height: 42px;
+  background-image: url(../images/logo-white.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .copyright span {
+  font-family: GillSans;
+  font-size: 12px;
+  color: #fff;
+}
+footer .social {
+  width: 100px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+footer .social span i {
+  border-radius: 20px;
+  padding-left: 10px;
+}
